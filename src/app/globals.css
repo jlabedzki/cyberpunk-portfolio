@@ -31,3 +31,18 @@ body {
     text-wrap: balance;
   }
 }
+
+nav {
+  &:hover {
+    text-shadow: 0 0 10px cyan;
+    box-shadow: 0 0 20px pink;
+
+    img {
+      /* box-shadow: 0 0 20px cyan; */
+    }
+
+    button {
+      text-shadow: 0 0 10px cyan;
+    }
+  }
+}
