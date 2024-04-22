@@ -9,7 +9,7 @@ export default function Home() {
       }
     >
       <nav
-        className="nav group flex justify-between items-center w-full h-[80px] py-8 pr-16 rounded-br-full border-b-2 border-slate-600
+        className="nav group flex justify-between items-center w-full h-[70px] py-8 pr-16 rounded-br-full border-b-2 border-slate-600
         shadow-xl bg-black bg-opacity-50
         hover:border-b-2 hover:border-pink-400 hover:bg-opacity-70 transition-all duration-150 ease-in-out"
       >
@@ -17,8 +17,8 @@ export default function Home() {
           <Image
             src="/li-profile.png"
             className="rounded-r-full border-2 border-l-0 border-slate-600 group-hover:border-pink-400"
-            width={`${80}`}
-            height={`${80}`}
+            width={70}
+            height={70}
             alt="Profile picture"
           />
           <span className="name uppercase text-2xl font-medium text-slate-600 group-hover:text-teal-400">
