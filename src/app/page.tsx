@@ -9,16 +9,16 @@ export default function Home() {
       }
     >
       <nav
-        className="nav group flex justify-between items-center w-full h-20 p-8 pr-16 rounded-br-full border-b-2 border-slate-600
+        className="nav group flex justify-between items-center w-full h-[80px] py-8 pr-16 rounded-br-full border-b-2 border-slate-600
         shadow-xl bg-black bg-opacity-50
-        hover:border-b-2 hover:border-pink-400 transition-all duration-150 ease-in-out"
+        hover:border-b-2 hover:border-pink-400 hover:bg-opacity-70 transition-all duration-150 ease-in-out"
       >
         <div className="flex items-center gap-4">
           <Image
-            src="/profile-picture.png"
-            className="rounded-full border border-slate-600 group-hover:border-teal-400"
-            width={60}
-            height={60}
+            src="/li-profile.png"
+            className="rounded-r-full border-2 border-l-0 border-slate-600 group-hover:border-pink-400"
+            width={`${80}`}
+            height={`${80}`}
             alt="Profile picture"
           />
           <span className="name uppercase text-2xl font-medium text-slate-600 group-hover:text-teal-400">
@@ -45,7 +45,7 @@ export default function Home() {
 
 function NavButton({ children }: PropsWithChildren) {
   return (
-    <button className="btn btn-ghost rounded-sm text-xl uppercase text-slate-600 group-hover:text-teal-400 hover:border-b-4 hover:border-b-teal-400">
+    <button className="btn btn-ghost rounded-sm text-xl uppercase text-slate-600 group-hover:text-teal-400 hover:border-b-4 hover:border-b-teal-400 transition-all duration-150">
       {children}
     </button>
   );
