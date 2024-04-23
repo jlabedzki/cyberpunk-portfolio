@@ -3,11 +3,7 @@ import { AnchorHTMLAttributes, PropsWithChildren } from "react";
 
 export default function Home() {
   return (
-    <main
-      className={
-        "flex flex-col min-h-screen w-100vw bg-gif bg-no-repeat bg-cover"
-      }
-    >
+    <main className="flex flex-col min-h-screen w-100vw bg-gif bg-no-repeat bg-cover">
       <nav
         className="nav group flex justify-between items-center w-full h-[70px] py-8 pr-16 rounded-br-full border-b-2 border-slate-600
         shadow-xl bg-black bg-opacity-50
@@ -45,7 +41,7 @@ export default function Home() {
 
 function NavButton({ children }: PropsWithChildren) {
   return (
-    <button className="btn btn-ghost rounded-sm text-xl uppercase text-slate-600 group-hover:text-teal-400 hover:border-b-4 hover:border-b-teal-400 transition-all duration-150">
+    <button className="btn btn-ghost rounded-sm text-xl uppercase text-slate-600 group-hover:text-teal-400 hover:border-b-2 hover:border-b-teal-400 transition-all duration-150">
       {children}
     </button>
   );
