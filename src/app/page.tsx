@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { AnchorHTMLAttributes, PropsWithChildren } from "react";
+import { FaGithubSquare, FaLinkedin } from "react-icons/fa";
+import { LuGanttChartSquare } from "react-icons/lu";
 
 export default function Home() {
   return (
@@ -28,12 +30,16 @@ export default function Home() {
           <NavButton>Contact</NavButton>
         </div>
       </nav>
-      <aside className="absolute top-1/2 flex flex-col gap-3">
-        <SideLink href="https://github.com/jlabedzki">github</SideLink>
-        <SideLink href="https://linkedin.com/in/johnny-labedzki">
-          linkedin
+      <aside className="absolute top-[80px] left-2 flex flex-col gap-3">
+        <SideLink href="https://github.com/jlabedzki">
+          <FaGithubSquare size={50} />
         </SideLink>
-        <SideLink href="/resume">resume</SideLink>
+        <SideLink href="https://linkedin.com/in/johnny-labedzki">
+          <FaLinkedin size={50} />
+        </SideLink>
+        <SideLink href="/resume">
+          <LuGanttChartSquare size={50} />
+        </SideLink>
       </aside>
     </main>
   );
@@ -54,8 +60,10 @@ function SideLink({
 }: PropsWithChildren & AnchorHTMLAttributes<HTMLAnchorElement>) {
   return (
     <a
-      className="text-2xl uppercase text-slate-600 group-hover:text-teal-400"
+      className="group sidelink text-2xl uppercase text-slate-600 hover:text-teal-400 rounded-md w-fit border-2 border-slate-600 hover:border-teal-400 transition-all duration-150 ease-in-out"
       href={href}
+      target="_blank"
+      rel="noopener noreferrer"
       {...rest}
     >
       {children}

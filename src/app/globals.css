@@ -46,3 +46,9 @@ nav {
     }
   }
 }
+
+.sidelink:hover {
+  svg {
+    box-shadow: 0 0 30px cyan;
+  }
+}
